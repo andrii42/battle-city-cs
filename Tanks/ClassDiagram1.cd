@@ -1,0 +1,710 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Tanks.CAnimatable" Collapsed="true">
+    <Position X="10.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAEABAAAAAAACAAAAAAEAAACBQAAAAAAAAAQAA=</HashCode>
+      <FileName>CAnimatable.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Tanks.BonusEventArgs" Collapsed="true">
+    <Position X="76.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAACAAAAAgAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CBonus.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tanks.CBonus" Collapsed="true">
+    <Position X="36.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAIAAAAAAAAAQAAACAAAAAAAAAAAACAAAABBQBAAAA=</HashCode>
+      <FileName>CBonus.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Tanks.CBonusClock" Collapsed="true">
+    <Position X="31" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CBonusClock.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tanks.CBonusGranade" Collapsed="true">
+    <Position X="33.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CBonusGranade.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tanks.CBonusHelmet" Collapsed="true">
+    <Position X="35.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CBonusHelmet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tanks.CBonusLife" Collapsed="true">
+    <Position X="37.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CBonusLife.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tanks.CBonusSpade" Collapsed="true">
+    <Position X="40" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CBonusSpade.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tanks.CBonusStar" Collapsed="true">
+    <Position X="42.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CBonusStar.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tanks.CBrick" Collapsed="true">
+    <Position X="67" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAABAAAAAIAAAAAEAQAAAAEAAAABAAAAAA=</HashCode>
+      <FileName>CBrick.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Tanks.CConstructionCursor" Collapsed="true">
+    <Position X="22" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAIAAAIAAAAAAACAAAAAIAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CConstructionLevel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Tanks.CConstructionLevel" Collapsed="true">
+    <Position X="0.5" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAkAAFAAAEAAAAAAACABAQAAEgAACIBAECABAA=</HashCode>
+      <FileName>CConstructionLevel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Tanks.CConstructionMode" Collapsed="true">
+    <Position X="3" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAgABAAAAAAAAAAAAAAAAAAAAQAAAAAIAEAAAAAA=</HashCode>
+      <FileName>CConstructionMode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tanks.CEagle" Collapsed="true">
+    <Position X="44.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CEagle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tanks.CExplosionBig" Collapsed="true">
+    <Position X="8.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAA=</HashCode>
+      <FileName>CExplosionBig.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tanks.CExplosionSmall" Collapsed="true">
+    <Position X="13" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CExplosionSmall.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tanks.CForceField" Collapsed="true">
+    <Position X="15.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAwAAAACAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CForceField.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tanks.CGameMode" Collapsed="true">
+    <Position X="3" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAYAEAAAAAA=</HashCode>
+      <FileName>CGameMode.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Tanks.CGameObject" Collapsed="true">
+    <Position X="38.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>UAAAAFQABAAEAAQAQAIAAEAAEAAAABAIQABgyAAAYYA=</HashCode>
+      <FileName>CGameObject.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Tanks.CGameObjectContainer&lt;T&gt;" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="78" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAgEAAAAAAAAAAEQlAABAIAAAAAgAAACAABAAgA=</HashCode>
+      <FileName>CGameObjectContainer.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Tanks.CGameOver" Collapsed="true">
+    <Position X="24.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CGameOver.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tanks.CGameOverMessage" Collapsed="true">
+    <Position X="26.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAACAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CGameOverMessage.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Tanks.CGarden" Collapsed="true">
+    <Position X="69.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CGarden.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tanks.CHeadQuarter" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="79.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAACACACAABRACAHiAAAAABAEAgACEoABgABAAAEA=</HashCode>
+      <FileName>CHeadQuarter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Tanks.CIce" Collapsed="true">
+    <Position X="71.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CIce.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tanks.CIconEnemy" Collapsed="true">
+    <Position X="46.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CIconEnemy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tanks.CIron" Collapsed="true">
+    <Position X="73.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CIron.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tanks.CKeyPressAdapter" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="81.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAAACAAAEAAAAAAEAAAgAAAAIAAAAAA=</HashCode>
+      <FileName>CKeyPressAdapter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Tanks.CLevel" Collapsed="true">
+    <Position X="1.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BgIAACCQAQAAAAAAAICAQAAABIAAAAEAACAAAAABAAA=</HashCode>
+      <FileName>CLevel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tanks.CLevelCurtain" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="83.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAEAAAIgACAQAAAAEAAEAAAAAgAAAACAAAA=</HashCode>
+      <FileName>CLevelCurtain.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Tanks.ClevelFlag" Collapsed="true">
+    <Position X="28.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ClevelFlag.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tanks.CMainMenuCursor" Collapsed="true">
+    <Position X="6.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAEAAAQAAAAAAAAAAAAAAAAAQACAAAIAAAA=</HashCode>
+      <FileName>CMainMenuCursor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tanks.CMapContainer" Collapsed="true">
+    <Position X="76.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAA=</HashCode>
+      <FileName>CMapContainer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tanks.CMenuMode" Collapsed="true">
+    <Position X="5.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAQAAAAEAAAAAAAAAAEAAAAAAUAkAAAIAEAAAAAA=</HashCode>
+      <FileName>CMenuMode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tanks.CModel" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="78" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CEAAAAAAAAAgAAAAAAAAAEAAAAAAAAAEgAABAAIAAAI=</HashCode>
+      <FileName>CModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Tanks.ConstructionEventArgs" Collapsed="true">
+    <Position X="81.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAQA=</HashCode>
+      <FileName>CModelEvents.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tanks.CMovable" Collapsed="true">
+    <Position X="55.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QECEgEFAgIABYAQAACYAgAAHAAAwARYAQAAFAAAEYAA=</HashCode>
+      <FileName>CMovable.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Tanks.CObjectCreator" Collapsed="true">
+    <Position X="79.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAIAAAAAAAAAAAAAACBAAAAgAAAAAAA=</HashCode>
+      <FileName>CObjectCreator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tanks.CPlayerIcon" Collapsed="true">
+    <Position X="19.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CPlayerIcon.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tanks.CPlayingMode" Collapsed="true">
+    <Position X="0.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AGAAAAAAAAAAAACAAAKAAmgMAAGgQAAEIAIEGAAAAAg=</HashCode>
+      <FileName>CPlayingMode.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Tanks.CPlayLevel" Collapsed="true">
+    <Position X="2.75" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IKKhADAICAHgVAIJgBBQACuDDUVjYGARgKwEmBCBsCA=</HashCode>
+      <FileName>CPlayLevel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Tanks.LevelEventArgs" Collapsed="true">
+    <Position X="83.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAEAAAAAA=</HashCode>
+      <FileName>CPlayLevelEventHandlers.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tanks.PointsEventArgs" Collapsed="true">
+    <Position X="78" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CPlayLevelEventHandlers.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tanks.CPoints" Collapsed="true">
+    <Position X="10.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CPoints.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tanks.CProjectile" Collapsed="true">
+    <Position X="49" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAQAAAAEAACAAAAgAAAAAAAAAQAAAEAAAAAA=</HashCode>
+      <FileName>CProjectile.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Tanks.StatElement" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="76.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABgAAAAABAQAAAAICAAAAAAIAAAIAAAAEAAAAAAIAA=</HashCode>
+      <FileName>CStatisticsViewer.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Tanks.CStatisticsViewer" Collapsed="true">
+    <Position X="64.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAowAQAAAgCQAAEAAUgAAAAAQIgAAQAAAAAA=</HashCode>
+      <FileName>CStatisticsViewer.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Tanks.CTank" Collapsed="true">
+    <Position X="56.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>kAAEAAAAAYAQDMEAAA7wAAAAEAgAAAAIQIAAgIAAAIA=</HashCode>
+      <FileName>CTank.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Tanks.CTankEnemy" Collapsed="true">
+    <Position X="54.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAACACAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CTankEnemy.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Tanks.CTankEnemy1" Collapsed="true">
+    <Position X="51.25" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CTankEnemy1.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tanks.CTankEnemy2" Collapsed="true">
+    <Position X="53.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CTankEnemy2.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tanks.CTankEnemy3" Collapsed="true">
+    <Position X="55.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CTankEnemy3.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tanks.CTankEnemy4" Collapsed="true">
+    <Position X="58" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CTankEnemy4.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tanks.CTankPlayer" Collapsed="true">
+    <Position X="61.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAEAIACQCBAAhAgBACAAAAAAAAAAAAAAQAAAAAABACA=</HashCode>
+      <FileName>CTankPlayer.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Tanks.CTankPlayer1" Collapsed="true">
+    <Position X="60.25" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAABAAAAAAgAAEAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CTankPlayer1.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tanks.CTankPlayer2" Collapsed="true">
+    <Position X="62.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CTankPlayer2.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tanks.CTankPortal" Collapsed="true">
+    <Position X="17.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAEAAAABAAAA=</HashCode>
+      <FileName>CTankPortal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tanks.CTile" Collapsed="true">
+    <Position X="70.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CTile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tanks.CWater" Collapsed="true">
+    <Position X="4" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CWater.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tanks.MainForm" Collapsed="true">
+    <Position X="76.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAACAAAACAAAAAAAAAQAAAAAIAAA=</HashCode>
+      <FileName>MainForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tanks.Program" Collapsed="true">
+    <Position X="79.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tanks.ViewControl" Collapsed="true">
+    <Position X="78" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAACCAAAAAAACAAAACAAIAAAAAgAAAAAAIAAA=</HashCode>
+      <FileName>ViewControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tanks.Properties.Resources" Collapsed="true">
+    <Position X="81.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AE1AnlLVATkmjQQACEZBEgAWpQHoeRgApmNCLpKQ4JE=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tanks.Properties.Settings" Collapsed="true">
+    <Position X="83.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Tanks.IGameMode" Collapsed="true">
+    <Position X="5.5" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAIAEAAAAAA=</HashCode>
+      <FileName>IGameMode.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Tanks.IGameObject" Collapsed="true">
+    <Position X="76.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAEQABAAAAAAAAAIAAEAAAAAAABAIQAAAAAAAYIA=</HashCode>
+      <FileName>IGameObject.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Tanks.IGameObjectContainer&lt;T&gt;" Collapsed="true">
+    <Position X="78" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAQBAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IGameObjectContainer.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Tanks.IKeyEventReceiver" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IKeyEventReceiver.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Tanks.IKeyProcessor" Collapsed="true">
+    <Position X="5.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IKeyProcessor.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Tanks.ILevel" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAQAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>ILevel.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Tanks.IMovable" Collapsed="true">
+    <Position X="79.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAFAgIAAAAAAACYAAAABAAAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>IMovable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Tanks.IProcessable" Collapsed="true">
+    <Position X="81.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IProcessable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Tanks.IResetable" Collapsed="true">
+    <Position X="83.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IResetable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Tanks.ITank" Collapsed="true">
+    <Position X="76.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQBIEAAAggAAAAEAgAAAAAAAAAAIAAAAA=</HashCode>
+      <FileName>ITank.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Tanks.ITankPlayer" Collapsed="true">
+    <Position X="78" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQCAAAhAABAAAAAAAAAAAAAAAAAAAAAAABACA=</HashCode>
+      <FileName>ITankPlayer.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="Tanks.Bonuses" Collapsed="true">
+    <Position X="78" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAQAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAABAgI=</HashCode>
+      <FileName>Enums.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Tanks.Directions" Collapsed="true">
+    <Position X="81.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAACACAAAAAAAI=</HashCode>
+      <FileName>Enums.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Tanks.ProjectileTypes" Collapsed="true">
+    <Position X="83.25" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAAAAAAAAAIAAAAAAAAAAAAAAAABAA=</HashCode>
+      <FileName>Enums.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Tanks.KeyMessageID" Collapsed="true">
+    <Position X="81.5" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAgAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Enums.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Tanks.KeyIndex" Collapsed="true">
+    <Position X="79.75" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAABAAAAAAAAAAAAAAAAAAACACAAAAAABI=</HashCode>
+      <FileName>Enums.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Tanks.EventId" Collapsed="true">
+    <Position X="83.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAIAIAABAAAAAAAAAAAAABAACAAAAAAAAAAAAA=</HashCode>
+      <FileName>Enums.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Tanks.BrickState" Collapsed="true">
+    <Position X="79.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACACEQAAAAAAIAAAEACAAAAAABAAAAAAgAAAAAAAIA=</HashCode>
+      <FileName>Enums.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Tanks.Blocks" Collapsed="true">
+    <Position X="76.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAIAEIMAAAIAAgBgACAEAAAQAAAgQAA=</HashCode>
+      <FileName>Enums.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Tanks.StaticObjects" Collapsed="true">
+    <Position X="76.25" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIIBAAAAAAAgACAAAAAgAAAAQAA=</HashCode>
+      <FileName>Enums.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Tanks.Tanks" Collapsed="true">
+    <Position X="78" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAAAAwAAAAAAAAAAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>Enums.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Tanks.GameModes" Collapsed="true">
+    <Position X="76.25" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAwAAAAAAAAAAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Enums.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Tanks.GameStatuses" Collapsed="true">
+    <Position X="78" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAIAAAAAAAAIAAAAAAAAAAAAAAAQAAA=</HashCode>
+      <FileName>Enums.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Delegate Name="Tanks.BonusTakeChecker" Collapsed="true">
+    <Position X="78" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CBonus.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="Tanks.AddRemoveOject" Collapsed="true">
+    <Position X="76.25" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CHeadQuarter.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="Tanks.GamePainter" Collapsed="true">
+    <Position X="79.75" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Delegates.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="Tanks.OnDestroy" Collapsed="true">
+    <Position X="76.25" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Delegates.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="Tanks.OnHit" Collapsed="true">
+    <Position X="79.75" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Delegates.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="Tanks.OnTankShoot" Collapsed="true">
+    <Position X="76.25" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>Delegates.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="Tanks.OnCheckMoveForward" Collapsed="true">
+    <Position X="81.5" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>Delegates.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="Tanks.OnDirectionChange" Collapsed="true">
+    <Position X="78" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Delegates.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="Tanks.OnMove" Collapsed="true">
+    <Position X="81.5" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Delegates.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="Tanks.OnCheckTargetHit" Collapsed="true">
+    <Position X="83.25" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Delegates.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="Tanks.OnSetInvinsible" Collapsed="true">
+    <Position X="83.25" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQACAAAAAAAAAA=</HashCode>
+      <FileName>Delegates.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

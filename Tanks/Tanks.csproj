@@ -1,0 +1,970 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{20C32C09-E2EA-4921-AFA2-937E814873F7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Tanks</RootNamespace>
+    <AssemblyName>Tanks</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CBonus.cs" />
+    <Compile Include="CBonusClock.cs" />
+    <Compile Include="CBonusGranade.cs" />
+    <Compile Include="CBonusHelmet.cs" />
+    <Compile Include="CBonusLife.cs" />
+    <Compile Include="CBonusSpade.cs" />
+    <Compile Include="CBonusStar.cs" />
+    <Compile Include="CConstructionLevel.cs" />
+    <Compile Include="CConstructionMode.cs" />
+    <Compile Include="CExplotion.cs" />
+    <Compile Include="CForceField.cs" />
+    <Compile Include="CGameOver.cs" />
+    <Compile Include="CGameOverMessage.cs" />
+    <Compile Include="CGameTextPainter.cs" />
+    <Compile Include="CImageProvider.cs" />
+    <Compile Include="CLevel.cs" />
+    <Compile Include="CLevelCurtain.cs" />
+    <Compile Include="CMainMenuCursor.cs" />
+    <Compile Include="CMapContainer.cs" />
+    <Compile Include="CMenuMode.cs" />
+    <Compile Include="CModelEvents.cs" />
+    <Compile Include="CPoints.cs" />
+    <Compile Include="CStatisticsViewer.cs" />
+    <Compile Include="CAnimatable.cs" />
+    <Compile Include="CBrick.cs" />
+    <Compile Include="CEagle.cs" />
+    <Compile Include="CGameObjectContainer.cs" />
+    <Compile Include="CIconEnemy.cs" />
+    <Compile Include="CIron.cs" />
+    <Compile Include="CGameMode.cs" />
+    <Compile Include="CGarden.cs" />
+    <Compile Include="CGameObject.cs" />
+    <Compile Include="CIce.cs" />
+    <Compile Include="CKeyPressAdapter.cs" />
+    <Compile Include="CPlayLevel.cs" />
+    <Compile Include="CPlayLevelEventHandlers.cs" />
+    <Compile Include="ClevelFlag.cs" />
+    <Compile Include="CMovable.cs" />
+    <Compile Include="CObjectCreator.cs" />
+    <Compile Include="CPlayerIcon.cs" />
+    <Compile Include="CTankEnemy2.cs" />
+    <Compile Include="CTankEnemy3.cs" />
+    <Compile Include="CTankEnemy4.cs" />
+    <Compile Include="Enums.cs" />
+    <Compile Include="CPlayingMode.cs" />
+    <Compile Include="CProjectile.cs" />
+    <Compile Include="CTank.cs" />
+    <Compile Include="CTankEnemy.cs" />
+    <Compile Include="CTankEnemy1.cs" />
+    <Compile Include="CTankPlayer.cs" />
+    <Compile Include="CTankPlayer1.cs" />
+    <Compile Include="CTankPlayer2.cs" />
+    <Compile Include="CTankPortal.cs" />
+    <Compile Include="CTile.cs" />
+    <Compile Include="CWater.cs" />
+    <Compile Include="Delegates.cs" />
+    <Compile Include="IGameMode.cs" />
+    <Compile Include="IGameObject.cs" />
+    <Compile Include="IGameObjectContainer.cs" />
+    <Compile Include="IKeyEventReceiver.cs" />
+    <Compile Include="IKeyProcessor.cs" />
+    <Compile Include="ILevel.cs" />
+    <Compile Include="IMovable.cs" />
+    <Compile Include="IProcessable.cs" />
+    <Compile Include="IResetable.cs" />
+    <Compile Include="ITank.cs" />
+    <Compile Include="ITankPlayer.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CModel.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewControl.Designer.cs">
+      <DependentUpon>ViewControl.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewControl.resx">
+      <DependentUpon>ViewControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="bin\Debug\10_level.map" />
+    <None Include="bin\Debug\11_level.map" />
+    <None Include="bin\Debug\12_level.map" />
+    <None Include="bin\Debug\13_level.map" />
+    <None Include="bin\Debug\14_level.map" />
+    <None Include="bin\Debug\15_level.map" />
+    <None Include="bin\Debug\16_level.map" />
+    <None Include="bin\Debug\17_level.map" />
+    <None Include="bin\Debug\18_level.map" />
+    <None Include="bin\Debug\19_level.map" />
+    <None Include="bin\Debug\1_level.map" />
+    <None Include="bin\Debug\20_level.map" />
+    <None Include="bin\Debug\21_level.map" />
+    <None Include="bin\Debug\22_level.map" />
+    <None Include="bin\Debug\23_level.map" />
+    <None Include="bin\Debug\24_level.map" />
+    <None Include="bin\Debug\25_level.map" />
+    <None Include="bin\Debug\26_level.map" />
+    <None Include="bin\Debug\27_level.map" />
+    <None Include="bin\Debug\28_level.map" />
+    <None Include="bin\Debug\29_level.map" />
+    <None Include="bin\Debug\2_level.map" />
+    <None Include="bin\Debug\30_level.map" />
+    <None Include="bin\Debug\31_level.map" />
+    <None Include="bin\Debug\32_level.map" />
+    <None Include="bin\Debug\33_level.map" />
+    <None Include="bin\Debug\34_level.map" />
+    <None Include="bin\Debug\35_level.map" />
+    <None Include="bin\Debug\36_level.map" />
+    <None Include="bin\Debug\3_level.map" />
+    <None Include="bin\Debug\4_level.map" />
+    <None Include="bin\Debug\5_level.map" />
+    <None Include="bin\Debug\6_level.map" />
+    <None Include="bin\Debug\7_level.map" />
+    <None Include="bin\Debug\8_level.map" />
+    <None Include="bin\Debug\9_level.map" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\star.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tank_down3.bmp" />
+    <None Include="Resources\tank_down2.bmp" />
+    <None Include="Resources\tank_down1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tank_left1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tank_left2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tank_left3.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tank_right1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tank_right2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tank_right3.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tank_up1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tank_up2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tank_up3.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\brick_full.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\brick_half_down.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\brick_half_left.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\brick_half_right.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\brick_half_up.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\brick_quarter_downleft.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\brick_quarter_downright.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\brick_quarter_upleft.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\brick_quarter_upright.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemytank_1_down 1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemytank_1_down 2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemytank_1_left 1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemytank_1_left 2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemytank_1_right 1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemytank_1_right 2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemytank_1_up 1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemytank_1_up 2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\garden.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ice.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\water_2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\water_1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ferrum.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Player1tank_left1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Player1tank_left2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Player1tank_right1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Player1tank_right2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Player1tank_up1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Player1tank_up2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ProjectileDown.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ProjectileLeft.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ProjectileRight.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ProjectileUp.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Player1tank_down1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Player1tank_down2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Explotion3.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\brick_null.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eagle.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ExplosiveBig1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ExplosiveBig2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ExplosiveBig3.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Explotion1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Explotion2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\portal_frame4.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\portal_frame1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\portal_frame2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\portal_frame3.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy_icon.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LevelFlag.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LevelFlag_big.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LevelFlagBig.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PlayerIcon.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PlayerIcon2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PlayerIcon3.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GameOver.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HQhit.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Statistics_1p.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\statistics_2p.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GameOverEnd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Menu.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy3_down_1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy3_down_2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy3_left_1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy3_left_2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy3_right_1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy3_right_2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy3_up_1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy3_up_2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy4_down_1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy4_down_2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy4_left_1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy4_left_2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy4_right_1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy4_right_2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy4_up_1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy4_up_2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\100.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\200.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\300.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\400.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\500.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clock.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\granade.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\helmet.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\life.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spade.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\star.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\forcefield1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\forcefield2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player2_up_2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player2_down_1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player2_down_2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player2_left_1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player2_left_2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player2_right_1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player2_right_2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player2_up_1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player3_up_2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player3_down_1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player3_down_2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player3_left_1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player3_left_2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player3_right_1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player3_right_2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player3_up_1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player4_up_2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player4_down_1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player4_down_2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player4_left_1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player4_left_2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player4_right_1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player4_right_2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player4_up_1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tankportal_1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tankportal_2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tankportal_3.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tankportal_4.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\projectile_down.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\projectile_left.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\projectile_right.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\projectile_up.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\explotion_1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\explotion_2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\explotion_3.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\explotion_4.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\explotion_5.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy1_bonus_down_1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy1_bonus_down_2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy1_bonus_left_1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy1_bonus_left_2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy1_bonus_right_1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy1_bonus_right_2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy1_bonus_up_1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy1_bonus_up_2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy1_down_1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy1_down_2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy1_left_1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy1_left_2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy1_right_1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy1_right_2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy1_up_1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy1_up_2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy2_bonus_down_1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy2_bonus_down_2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy2_bonus_left_1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy2_bonus_left_2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy2_bonus_right_1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy2_bonus_right_2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy2_bonus_up_1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy2_bonus_up_2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy2_down_1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy2_down_2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy2_left_1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy2_left_2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy2_right_1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy2_right_2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy2_up_1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy2_up_2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy3_bonus_down_1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy3_bonus_down_2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy3_bonus_left_1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy3_bonus_left_2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy3_bonus_right_1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy3_bonus_right_2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy3_bonus_up_1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy3_bonus_up_2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy4_bonus_down_1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy4_bonus_down_2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy4_bonus_left_1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy4_bonus_left_2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy4_bonus_right_1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy4_bonus_right_2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy4_bonus_up_1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy4_bonus_up_2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player2_level0_down_1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player2_level0_down_2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player2_level0_left_1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player2_level0_left_2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player2_level0_right_1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player2_level0_right_2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player2_level0_up_1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player2_level0_up_2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player2_level1_down_1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player2_level1_down_2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player2_level1_left_1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player2_level1_left_2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player2_level1_right_1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player2_level1_right_2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player2_level1_up_1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player2_level1_up_2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player2_level2_down_1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player2_level2_down_2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player2_level2_left_1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player2_level2_left_2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player2_level2_right_1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player2_level2_right_2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player2_level2_up_1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player2_level2_up_2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player2_level3_down_1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player2_level3_down_2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player2_level3_left_1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player2_level3_left_2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player2_level3_right_1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player2_level3_right_2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player2_level3_up_1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player2_level3_up_2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\-.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\I.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\II.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Menu 1p.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Menu 2p.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\levelCurtain.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\levelCurtainFull.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\g.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\s.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy4_green_down_1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy4_green_down_2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy4_green_left_1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy4_green_left_2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy4_green_right_1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy4_green_right_2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy4_green_up_1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy4_green_up_2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy4_yellow_down_1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy4_yellow_down_2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy4_yellow_left_1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy4_yellow_left_2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy4_yellow_right_1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy4_yellow_right_2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy4_yellow_up_1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy4_yellow_up_2.gif" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
